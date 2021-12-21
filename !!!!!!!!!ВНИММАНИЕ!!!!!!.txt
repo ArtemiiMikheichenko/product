@@ -1,0 +1,9 @@
+откройте qqq 
+1 - скачать intellij IDEA
+2 - подключить библиотеку javafx-sdk-17.0.1 (скачать на сайте)
+3 - запустить в main
+или
+в папке qqq изменить путь к библиотеке в батнике - java --module-path путь\до\библиотеки --add-modules=javafx.controls,javafx.fxml,javafx.graphics -jar warehouse.jar
+pause
+
+main для запуска C:\Users\admin\IdeaProjects\App\src\sample

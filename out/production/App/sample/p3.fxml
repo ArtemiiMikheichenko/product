@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="73.0" prefHeight="58.0" prefWidth="1280.0" style="-fx-background-color: #D3D3D3;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.009999999776482582" green="0.009999999776482582" blue="0.009999999776482582" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Text fx:id="textgreat" fill="#000000b4" layoutX="575.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Конструктор простых тестов" textAlignment="CENTER">
+               <font>
+                  <Font name="Centaur" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-7.0" layoutY="73.0" prefHeight="732.0" prefWidth="275.0" style="-fx-background-color: #D3D3D3;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Button fx:id="On1" layoutX="43.0" layoutY="631.0" mnemonicParsing="false" onAction="#On1" prefHeight="39.0" prefWidth="209.0" text="На главную">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Label layoutX="75.0" layoutY="23.0" text="Меню функций">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Separator layoutX="3.0" layoutY="58.0" prefHeight="27.0" prefWidth="272.0" style="-fx-background-color: #808080;" />
+            <Button fx:id="back1" disable="true" layoutX="33.0" layoutY="391.0" mnemonicParsing="false" onAction="#Back" prefHeight="39.0" prefWidth="209.0" text="В начало">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="back2" disable="true" layoutX="33.0" layoutY="276.0" mnemonicParsing="false" onAction="#Back2" prefHeight="39.0" prefWidth="209.0" text="Пред вопрос">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="correct" disable="true" layoutX="33.0" layoutY="163.0" mnemonicParsing="false" onAction="#Back3" prefHeight="39.0" prefWidth="209.0" text="Посмотреть ошибки">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-4.0" prefHeight="77.0" prefWidth="1280.0" style="-fx-background-color: #8B0000;" />
+      <TextArea fx:id="txtfield_1_4" disable="true" layoutX="301.0" layoutY="219.0" prefHeight="66.0" prefWidth="953.0" promptText="jjj" visible="false" wrapText="true" />
+      <Text fx:id="textque1_3" layoutX="415.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="                      Введите название теста и его директорию" wrappingWidth="678.0">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <TextArea fx:id="txtfieldque1_3" layoutX="430.0" layoutY="467.0" prefHeight="38.0" prefWidth="598.0" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <RadioButton fx:id="radio1" layoutX="317.0" layoutY="380.0" mnemonicParsing="false" selected="true" visible="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="radio" />
+         </toggleGroup>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio2" layoutX="317.0" layoutY="418.0" mnemonicParsing="false" toggleGroup="$radio" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radio3" layoutX="317.0" layoutY="456.0" mnemonicParsing="false" toggleGroup="$radio" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radio4" layoutX="317.0" layoutY="495.0" mnemonicParsing="false" toggleGroup="$radio" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <Button fx:id="Next2" layoutX="1102.0" layoutY="716.0" mnemonicParsing="false" onAction="#Next2" prefHeight="45.0" prefWidth="136.0" text="Далее">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <RadioButton fx:id="radio11" layoutX="318.0" layoutY="380.0" mnemonicParsing="false" selected="true" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radio21" layoutX="318.0" layoutY="418.0" mnemonicParsing="false" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radio41" layoutX="318.0" layoutY="495.0" mnemonicParsing="false" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radio31" layoutX="318.0" layoutY="456.0" mnemonicParsing="false" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <ComboBox fx:id="combo1" layoutX="818.0" layoutY="376.0" prefHeight="48.0" prefWidth="247.0" visible="false" />
+      <ComboBox fx:id="combo2" layoutX="818.0" layoutY="432.0" prefHeight="48.0" prefWidth="247.0" visible="false" />
+      <ComboBox fx:id="combo3" layoutX="818.0" layoutY="497.0" prefHeight="48.0" prefWidth="247.0" visible="false" />
+      <ComboBox fx:id="combo4" layoutX="818.0" layoutY="558.0" prefHeight="48.0" prefWidth="247.0" visible="false" />
+      <Text fx:id="textque41" layoutX="325.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="textque42" layoutX="324.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="textque43" layoutX="324.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="textque44" layoutX="322.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="txtfieldname" layoutX="640.0" layoutY="220.0" prefHeight="61.0" prefWidth="178.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <TextArea fx:id="txtfieldDir1" layoutX="586.0" layoutY="355.0" prefHeight="69.0" prefWidth="287.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>
